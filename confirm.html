@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirmation Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .confirmation-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 60%;
+      max-width: 500px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #663399;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: rgb(98, 98, 196);
+    }
+  </style>
+</head>
+<body>
+  <div class="confirmation-container">
+    <h2>Form Submission Details</h2>
+    <p id="confirmName"></p>
+    <p id="confirmMobile"></p>
+    <p id="confirmEmail"></p>
+    <p id="confirmGender"></p>
+    <p id="confirmAddress"></p>
+    <p id="confirmCity"></p>
+    <p id="confirmState"></p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    const formData = JSON.parse(localStorage.getItem("formData"));
+
+    if (formData) {
+      document.getElementById("confirmName").innerText = `Name: ${formData.name}`;
+      document.getElementById("confirmMobile").innerText = `Mobile: ${formData.mobile}`;
+      document.getElementById("confirmEmail").innerText = `Email: ${formData.email}`;
+      document.getElementById("confirmGender").innerText = `Gender: ${formData.gender}`;
+      document.getElementById("confirmAddress").innerText = `Address: ${formData.address}`;
+      document.getElementById("confirmCity").innerText = `City: ${formData.city}`;
+      document.getElementById("confirmState").innerText = `State: ${formData.state}`;
+    } else {
+      document.body.innerHTML = "<h2>Form data not found.</h2>";
+    }
+
+    function logout() {
+      localStorage.removeItem("formData");
+      window.location.href = "Expt 9.html";
+    }
+  </script>
+</body>
+</html>

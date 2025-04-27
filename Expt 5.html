@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .header p {
+      margin: 5px;
+      font-weight: bold;
+    }
+
+    input, select {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+      width: 60%;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .output {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <p>Rakshada Renapurkar</p>
+      <p>Batch - R8 | Roll No. - 42459</p>
+      <p>Subject - JavaScript</p>
+    </div>
+
+    <h1>Countdown Timer</h1>
+
+    <input type="date" id="dateInput">
+    <input type="time" id="timeInput" step="1">
+
+    <br>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+
+    <div id="timer" class="output">00d 00h 00m 00s</div>
+  </div>
+
+  <script src="Expt5.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Change Background Color</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: lightgray;
+      transition: background-color 0.5s ease;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    #inputField {
+      padding: 8px;
+      font-size: 14px;
+      margin: 20px 0;
+      width: 250px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p style="margin: 5px; font-weight: bold;">Rakshada Renapurkar</p>
+    <p style="margin: 5px; font-weight: bold;">Batch: R8</p>
+    <p style="margin: 5px; font-weight: bold;">Roll No.: 42459</p>
+    <p style="margin: 5px; font-weight: bold;">Subject: JavaScript</p>
+
+    <h1 id="eventHeader">Event Handling</h1>
+
+    <div>
+      <input
+        type="text"
+        id="inputField"
+        placeholder="Click to enter"
+        onfocus="changeColorOnFocus()"
+        onblur="resetColor()"
+      />
+    </div>
+  </div>
+
+  <script src="Expt8.js"></script> <!-- External JS file -->
+</body>
+</html>

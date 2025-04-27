@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d8f5e0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      background-color: white;
+      width: 80%;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h4 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #222;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: background-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="text"]:hover {
+      background-color: lightblue;
+    }
+
+    .gender-options {
+      display: flex;
+      gap: 15px;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      background-color: #28a745;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h4>Student Form</h4>
+    <form id="myForm">
+      <label for="fname">Full Name:</label>
+      <input type="text" id="fname" placeholder="Enter your full name" />
+      <div id="nameError" class="error-message"></div>
+
+      <label for="mnumber">Mobile Number:</label>
+      <input type="text" id="mnumber" placeholder="Enter mobile number" />
+      <div id="mobileError" class="error-message"></div>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Enter email" />
+      <div id="emailError" class="error-message"></div>
+
+      <label>Gender:</label>
+      <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="Male" />Male
+        <input type="radio" id="female" name="gender" value="Female" />Female
+        <input type="radio" id="other" name="gender" value="Other" />Other
+      </div>
+      <div id="genderError" class="error-message"></div>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" placeholder="Enter your address" />
+      <div id="addressError" class="error-message"></div>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" placeholder="Enter your city" />
+      <div id="cityError" class="error-message"></div>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" placeholder="Enter your state" />
+      <div id="stateError" class="error-message"></div>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>String Operations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header p {
+      margin: 4px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .box {
+      flex: 1;
+      min-width: 300px;
+      background-color: #e8f0fe;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .box h3 {
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: block;
+      margin: 10px auto 0 auto;
+    }
+
+    .output {
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      min-height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <p>Rakshada Renapurkar</p>
+      <p>Batch - R8 | Roll No. - 42459</p>
+      <p>Subject - JavaScript</p>
+    </div>
+
+    <h1>String Operations</h1>
+
+    <div class="grid">
+      <!-- Reverse String Box -->
+      <div class="box">
+        <h3>Reverse a String</h3>
+        <input type="text" id="stringToReverse" placeholder="Enter string to reverse">
+        <button onclick="reverseString()">Reverse</button>
+        <div id="reverseOutput" class="output"></div>
+      </div>
+
+      <!-- Replace Characters Box -->
+      <div class="box">
+        <h3>Replace Characters in a String</h3>
+        <input type="text" id="originalString" placeholder="Original string">
+        <input type="text" id="charToReplace" placeholder="Character to replace">
+        <input type="text" id="replacementChar" placeholder="Replacement character">
+        <button onclick="replaceCharacters()">Replace</button>
+        <div id="replaceOutput" class="output"></div>
+      </div>
+
+      <!-- Palindrome Box -->
+      <div class="box">
+        <h3>Check Palindrome</h3>
+        <input type="text" id="palindromeString" placeholder="Enter string to check">
+        <button onclick="checkPalindrome()">Check Palindrome</button>
+        <div id="palindromeOutput" class="output"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Expt3.js"></script>
+</body>
+</html>

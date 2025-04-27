@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array of Objects Operations</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding: 20px;">
+
+  <div style="max-width: 700px; margin: auto; padding: 20px; background-color: #fff; border: 1px solid #ccc; border-radius: 15px;">
+    <div>
+      <p style="margin: 4px; font-weight: bold;">Rakshada Renapurkar</p>
+      <p style="margin: 4px; font-weight: bold;">Batch - R8 | Roll No. - 42459</p>
+      <p style="margin: 4px; font-weight: bold;">Subject - JavaScript</p>
+    </div>
+
+    <h2 style="margin-top: 20px;">Array of Objects</h2>
+
+    <div style="margin-bottom: 10px;">
+      <input type="number" id="arraySize" placeholder="Enter array size"
+        style="padding: 10px; width: 80%; border-radius: 10px;">
+    </div>
+    <button onclick="setArraySize()" style="padding: 10px 15px; margin: 5px; border-radius: 10px;">Set Array</button>
+
+    <div style="margin-top: 15px;">
+      <input type="text" id="objectInput" placeholder='Enter object(s) (e.g., {"key":"val"}, [1,2])'
+        style="padding: 10px; width: 80%; border-radius: 10px;">
+    </div>
+    <button onclick="addToArray()" style="padding: 10px 15px; margin: 5px; border-radius: 10px;">Add</button>
+
+    <div style="margin-top: 15px;">
+      <input type="text" id="checkObject" placeholder="Enter index to check"
+        style="padding: 10px; width: 80%; border-radius: 10px;">
+    </div>
+    <button onclick="checkObject()" style="padding: 10px 15px; margin: 5px; border-radius: 10px;">Check</button>
+
+    <div id="output" style="margin-top: 20px; font-size: 16px; background: #eaeaea; padding: 10px; border-radius: 10px; text-align: left; overflow-x: auto;">
+      Array: []
+    </div>
+  </div>
+
+  <script src="Expt7.js"></script>
+</body>
+</html>

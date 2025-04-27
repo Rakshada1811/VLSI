@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+
+        .header p {
+            margin: 4px;
+        }
+
+        .section {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        input {
+            margin: 5px;
+            padding: 10px;
+            width: 200px;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: 1px solid #ddd;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p><strong>Rakshada Renapurkar</strong></p>
+        <p><strong>Batch: R8 | Roll No.: 42459</strong></p>
+        <p><strong>Subject: JavaScript</strong></p>
+    </div>
+
+    <hr>
+
+    <h1>Area Calculator</h1>
+
+    <div class="section">
+        <h2>Rectangle</h2>
+        <input type="number" id="Rect_L" placeholder="Enter length">
+        <input type="number" id="Rect_W" placeholder="Enter width"><br>
+        <button onclick="cal_Rect_Area()">Calculate Rectangle Area</button>
+        <p id="Rect_A"></p>
+    </div>
+
+    <div class="section">
+        <h2>Circle</h2>
+        <input type="number" id="Circ_R" placeholder="Enter radius"><br>
+        <button onclick="cal_Circ_Area()">Calculate Circle Area</button>
+        <p id="Circ_A"></p>
+    </div>
+
+    <div class="section">
+        <h2>Triangle</h2>
+        <input type="number" id="Tria_X" placeholder="Enter Side A">
+        <input type="number" id="Tria_Y" placeholder="Enter Side B">
+        <input type="number" id="Tria_Z" placeholder="Enter Side C"><br>
+        <button onclick="cal_Tria_Area()">Calculate Triangle Area</button>
+        <p id="Tria_A"></p>
+    </div>
+
+    <script src="Expt1.js"></script>
+</body>
+</html>

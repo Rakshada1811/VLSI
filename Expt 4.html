@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>String Comparison Methods</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      text-align: left;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header p {
+      margin: 5px;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 90%;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 15px;
+      display: block;
+    }
+    .output {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <p>Rakshada Renapurkar</p>
+      <p>Batch - R8 | Roll No. - 42459</p>
+      <p>Subject - JavaScript</p>
+    </div>
+    <h1>String Comparison Methods</h1>
+
+    <!-- Equality (==) -->
+    <h2>Equality (==) Comparison</h2>
+    <input type="text" id="equalString1" placeholder="Enter first string (==)">
+    <input type="text" id="equalString2" placeholder="Enter second string (==)">
+    <button onclick="compareEquality()">Compare ==</button>
+    <div id="resultEqual" class="output"></div>
+
+    <!-- Strict Equality (===) -->
+    <h2>Strict Equality (===) Comparison</h2>
+    <input type="text" id="strictString1" placeholder="Enter first string (===)">
+    <input type="text" id="strictString2" placeholder="Enter second string (===)">
+    <button onclick="compareStrictEquality()">Compare ===</button>
+    <div id="resultStrict" class="output"></div>
+
+    <!-- Lexicographical Comparison -->
+    <h2>Lexicographical Comparison (localeCompare)</h2>
+    <input type="text" id="lexicoString1" placeholder="Enter first string">
+    <input type="text" id="lexicoString2" placeholder="Enter second string">
+    <button onclick="compareLexicographical()">Compare Alphabetically</button>
+    <div id="resultLexico" class="output"></div>
+
+    <!-- Length Comparison -->
+    <h2>Length Comparison</h2>
+    <input type="text" id="lengthString1" placeholder="Enter first string">
+    <input type="text" id="lengthString2" placeholder="Enter second string">
+    <button onclick="compareLength()">Compare Length</button>
+    <div id="resultLength" class="output"></div>
+
+    <!-- Case-insensitive Comparison -->
+    <h2>Custom Comparison (Case Insensitive)</h2>
+    <input type="text" id="customString1" placeholder="Enter first string">
+    <input type="text" id="customString2" placeholder="Enter second string">
+    <button onclick="customComparison()">Compare (Case Insensitive)</button>
+    <div id="resultCustom" class="output"></div>
+  </div>
+
+  <script src="Expt4.js"></script>
+</body>
+</html>

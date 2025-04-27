@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Operations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+
+    .row input, .row button {
+      flex: 1;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 10px;
+      min-width: 45%;
+    }
+
+    #output {
+      margin-top: 20px;
+      font-size: 16px;
+      background: #eaeaea;
+      padding: 10px;
+      border-radius: 10px;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p style="margin: 4px; font-weight: bold;">Rakshada Renapurkar</p>
+    <p style="margin: 4px; font-weight: bold;">Batch - R8 | Roll No. - 42459</p>
+    <p style="margin: 4px; font-weight: bold;">Subject - JavaScript</p>
+
+    <h2>Array Operations</h2>
+
+    <div class="row">
+      <input type="number" id="arrayLength" placeholder="Enter array length">
+      <input type="text" id="arrayInput" placeholder="Enter elements (comma-separated)">
+    </div>
+
+    <div class="row">
+      <button onclick="setArray()">Set Array</button>
+      <button onclick="resetArray()">Reset Array</button>
+    </div>
+
+    <div class="row">
+      <input type="text" id="removeElement" placeholder="Element to remove">
+      <button onclick="removeElement()">Remove</button>
+    </div>
+
+    <div class="row">
+      <input type="text" id="checkElement" placeholder="Element to check">
+      <button onclick="checkElement()">Check</button>
+    </div>
+
+    <div class="row">
+      <button onclick="emptyArray()">Empty Array</button>
+    </div>
+
+    <div id="output">Array: []</div>
+  </div>
+
+  <script src="Expt6.js"></script>
+</body>
+</html>
