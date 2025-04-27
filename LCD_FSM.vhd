@@ -102,7 +102,7 @@ begin
             
         when d0 =>
             lcd_rs_s <= '1';
-            dataout_s<="01010010"; --R(52h)
+            dataout_s<="01010010"; --R(52h)P(50h)I(49h)C(43h)T(54h)
             nx<=d1;
             
         when d1 =>
